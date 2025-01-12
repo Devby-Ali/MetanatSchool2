@@ -1,7 +1,7 @@
 // import React, { useState } from "react";
 import React, { useState } from "react";
 import Header from "../../Components/Header/Header";
-import LastCourses from "../../Components/LastCourses/LastCourses";
+import LastClasses from "../../Components/LastCourses/LastClasses";
 import AboutUs from "../../Components/AboutUs/AboutUs";
 import PopularCourses from "../../Components/PopularCourses/PopularCourses";
 import PresellCourses from "../../Components/PresellCourses/PresellCourses";
@@ -19,7 +19,7 @@ export default function Index() {
       </div>
       <Header />
       <DescriptionCards />
-      <LastCourses />
+      <LastClasses />
       <AboutUs />
       <PopularCourses />
       <PresellCourses />

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import CourseBox from "../CourseBox/CourseBox";
 import SectionHeader from "../SectionHeader/SectionHeader";
 
-export default function LastCourses() {
+export default function LastClasses() {
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
