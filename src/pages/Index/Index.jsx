@@ -7,6 +7,7 @@ import PopularCourses from "../../Components/PopularCourses/PopularCourses";
 import PresellCourses from "../../Components/PresellCourses/PresellCourses";
 import LastArticles from "../../Components/LastArticles/LastArticles";
 import Footer from "../../Components/Footer/Footer";
+import DescriptionCards from "../../Components/DescriptionCard/DescriptionCards";
 
 export default function Index() {
   const [show, setModalShow] = useState(true);
@@ -14,9 +15,10 @@ export default function Index() {
   return (
     <>
       <div className="absolute -z-10 opacity-40 dark:opacity-20">
-        <img src="/images/sky.png" alt="" />
+        <img src="/images/sky.png" alt="bgSVG" />
       </div>
       <Header />
+      <DescriptionCards />
       <LastCourses />
       <AboutUs />
       <PopularCourses />
