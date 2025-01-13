@@ -1,7 +1,7 @@
 import React from "react";
 import FooterItem from "../FooterItem/FooterItem";
 import { Link } from "react-router-dom";
-import { HiOutlineEnvelope } from "react-icons/hi2";
+import { HiOutlineDevicePhoneMobile, HiOutlineEnvelope } from "react-icons/hi2";
 import { HiOutlinePhone } from "react-icons/hi2";
 import { LiaTelegram } from "react-icons/lia";
 import { SlSocialInstagram } from "react-icons/sl";
@@ -11,6 +11,7 @@ import { useForm } from "../../hooks/useForm";
 import Swal from "sweetalert2";
 import { FiMail } from "react-icons/fi";
 import Button from "../Form/Button";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   const [formState, onInputHandler] = useForm(
@@ -52,7 +53,7 @@ export default function Footer() {
         <div className="pb-8 mb-8 sm:pb-16 sm:mb-16 border-b border-b-gray-400">
           <div className="flex items-center justify-between">
             <Link to={"/"} className="flex items-end text-light-blue-700">
-              <div className="rotate-[40deg] mb-1 sm:mb-2">
+              <div className="rotate-[30deg]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="65"
@@ -70,8 +71,8 @@ export default function Footer() {
                   <path d="m9 11 3 3 3-3"></path>
                 </svg>
               </div>
-              <span className="font-MikhakWoff2one text-5xl sm:text-6xl font-bold -mr-4">
-                SKYTech
+              <span className="font-EstedadBold text-6xl sm:text-7xl font-bold -mr-4">
+                متانت
               </span>
             </Link>
             <div className="flex gap-x-4 sm:gap-x-5">
@@ -93,31 +94,31 @@ export default function Footer() {
           </div>
           <div className="flex items-center flex-wrap gap-y-8 gap-x-16 mt-16">
             <a
-              href="tel:02191030926"
-              className="flex items-center flex-grow md:flex-grow-0 gap-x-2.5 sm:gap-x-3 text-2xl sm:text-[1.7rem]"
+              href="tel:34222621"
+              className="flex items-center flex-grow md:flex-grow-0 gap-x-2.5 sm:gap-x-3 text-2xl sm:text-[1.7rem] ltr-text"
             >
+              34222621
               <div className="text-3xl sm:text-4xl">
                 <HiOutlinePhone />
               </div>
-              0211234567
             </a>
             <a
-              href="mailto:info@skytech.ir"
-              className="flex items-center flex-grow md:flex-grow-0 gap-x-2.5 sm:gap-x-3 text-2xl sm:text-[1.7rem]"
+              href="tel:09184892399"
+              className="flex items-center flex-grow md:flex-grow-0 gap-x-2.5 sm:gap-x-3 text-2xl sm:text-[1.7rem] ltr-text"
             >
+              09184892399
               <div className="text-3xl sm:text-4xl">
-                <HiOutlineEnvelope />
+                <HiOutlineDevicePhoneMobile />
               </div>
-              info@SKY-Tech_academy.ir
             </a>
             <a
               href="https://t.me/skytech_support"
-              className="flex items-center flex-grow md:flex-grow-0 gap-x-2.5 sm:gap-x-3 text-2xl sm:text-[1.7rem]"
+              className="flex items-center flex-grow md:flex-grow-0 gap-x-2.5 sm:gap-x-3 text-2xl sm:text-[1.7rem] ltr-text"
             >
+              @metanat5353
               <div className="text-3xl sm:text-4xl">
-                <LiaTelegram />
+                <FaInstagram />
               </div>
-              SKY-Tech_academy_support@
             </a>
             <div className="flex items-center flex-wrap gap-y-6 gap-x-4 lg:gap-x-8">
               <span>
@@ -154,39 +155,74 @@ export default function Footer() {
         <div className="flex items-start justify-between flex-wrap gap-5 sm:mb-14 text-3xl/10">
           <div>
             <span className="inline-block sm:text-4xl font-EstedadBold mb-3 sm:mb-6">
-              درباره SKY Tech
+              دبستان مونته سوری متانت
             </span>
-            <p className="max-w-[60rem]"></p>
             <div className="md:w-[50rem] lg:w-auto">
               <p className="max-w-[40rem] text-2xl sm:text-[1.65rem] leading-relaxed">
-                شروع هرچیزی سخته، ولی وقتی مسیر درستی رو انتخاب کنی، با خیال
-                راحت و بدون استرس میتونی از مسیر لذت ببری. ما در آکادمی اسکای,
-                توی سفر به دنیای برنامه نویسی کنارت هستیم تا باهم رشد کنیم و از
-                نتیجه زحمات مون لذت ببریم.
+                روش مونته سوری یک روش آموزشی است که بر روی علایق و فعالیت‌های
+                روزمره و طبیعی کودکان تمرکز دارد. این روش کاملاً از روش‌های خشک
+                و رسمی آموزشی جدا بوده و بیشتر بر روی مهارت‌هایی تأکید می‌کند که
+                در دنیای واقعی برای کودکان کاربرد دارد. این روش معمولاً در
+                محیط‌های آموزشی مانند مدارس و مهدکودک‌ها اجرا می‌شود و کودکان را
+                به یادگیری دانش مشتاق می‌کند. کودکان در روش مونته سوری دیگر با
+                مفاهیم خشک و انتزاعی سر و کار ندارند و می‌توانند جهان اطراف خود
+                را با نگاه تازه‌تری درک کنند. همچنین هیچ زور و اجباری بر روی
+                کودکان نیست و آن‌ها کاملا احساس آزادی عمل دارند.
               </p>
             </div>
           </div>
           <div className="flex items-start gap-x-10 sm:gap-x-14 sm:mt-7">
             <div>
-              <span className="inline-block sm:text-4xl font-EstedadBold mb-6 sm:mb-8">
-                دوره های پرطرفدار
-              </span>
-              <div className="flex flex-col items-start gap-y-5 sm:gap-y-8 text-2xl sm:text-[1.65rem  ]">
-                <a href="">آموزش پایتون</a>
-                <a href="">آموزش جاوااسکریپت</a>
-                <a href="">آموزش Html</a>
-                <a href="">آموزش Css</a>
-              </div>
-            </div>
-            <div>
-              <span className="inline-block sm:text-4xl font-EstedadBold mb-6 sm:mb-8">
+              <span className="inline-block sm:text-4xl font-EstedadBold mb-8 sm:mb-12">
                 دسترسی سریع
               </span>
-              <div className="flex flex-col items-start gap-y-5 sm:gap-y-8 text-2xl sm:text-[1.65rem  ]">
-                <a href="">قوانین و مقررات</a>
-                <a href="">ارسال تیکت</a>
-                <a href="">همه دوره ها</a>
-                <Link to={"/contact"}>تماس با ما</Link>
+              <div className="flex gap-x-12">
+                <div className="flex flex-col items-start gap-y-5 sm:gap-y-8 text-2xl sm:text-3xl">
+                  <Link
+                    to={"/"}
+                    className="flex items-center gap-x-2 md:gap-x-3 hover:text-light-blue-600 transition-colors"
+                  >
+                    <span className="inline-block w-2 md:w-2.5 h-1 bg-current rounded-full"></span>
+                    صفحه اصلی
+                  </Link>
+                  <Link
+                    to={"/aboutUs"}
+                    className="flex items-center gap-x-2 md:gap-x-3 hover:text-light-blue-600 transition-colors"
+                  >
+                    <span className="inline-block w-2 md:w-2.5 h-1 bg-current rounded-full"></span>
+                    درباره ی ما
+                  </Link>
+                  <Link
+                    to={"/classes"}
+                    className="flex items-center gap-x-2 md:gap-x-3 hover:text-light-blue-600 transition-colors"
+                  >
+                    <span className="inline-block w-2 md:w-2.5 h-1 bg-current rounded-full"></span>
+                    کلاس ها
+                  </Link>
+                </div>
+                <div className="flex flex-col items-start gap-y-5 sm:gap-y-8 text-2xl sm:text-3xl">
+                  <Link
+                    to={"/events"}
+                    className="flex items-center gap-x-2 md:gap-x-3 hover:text-light-blue-600 transition-colors"
+                  >
+                    <span className="inline-block w-2 md:w-2.5 h-1 bg-current rounded-full"></span>
+                    رویداد ها
+                  </Link>
+                  <Link
+                    to={"/teachers"}
+                    className="flex items-center gap-x-2 md:gap-x-3 hover:text-light-blue-600 transition-colors"
+                  >
+                    <span className="inline-block w-2 md:w-2.5 h-1 bg-current rounded-full"></span>
+                    مربیان
+                  </Link>
+                  <Link
+                    to={"/contactUs"}
+                    className="flex items-center gap-x-2 md:gap-x-3 hover:text-light-blue-600 transition-colors"
+                  >
+                    <span className="inline-block w-2 md:w-2.5 h-1 bg-current rounded-full"></span>
+                    درباره ما
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -200,9 +236,11 @@ export default function Footer() {
         </div>
         <div className="flex items-center justify-center text-center sm:text-right sm:justify-between flex-wrap gap-y-2 gap-x-4 mt-8 sm:mt-10">
           <span>
-            کلیه حقوق مادی و معنوی سایت برای SK-Tech academy محفوظ است.
+            کلیه حقوق مادی و معنوی سایت برای{" "}
+            <span className="text-light-blue-600">دبستان متانت</span> محفوظ است.
           </span>
-          <span>ساخته شده با ❤️ در SKY-Tech</span>
+          <span className="ltr-text">@Devby_Ali</span>
+          <span>ساخته شده با ❤️ در متانت</span>
         </div>
       </div>
     </footer>

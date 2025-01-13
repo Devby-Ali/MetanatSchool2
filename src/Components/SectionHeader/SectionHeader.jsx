@@ -10,10 +10,10 @@ export default function SectionHeader({ title, desc, titleValue, btnTitle, btnHr
           <div className="flex-center sm:justify-start gap-x-2.5">
             {/* <span className="hidden sm:inline-block w-8 h-8 bg-cyan-600 rounded-full mt-3"></span> */}
             <span className="hidden sm:block w-1 h-16 bg-light-blue-600 rounded-r-full shadowLightBlue ml-2 mt-3"></span>
-            <h3 className="font-MikhakWoff2one font-bold text-[2.7rem]">{title}</h3>
+            <h3 className="font-MikhakWoff2one tracking-wide font-bold text-[2.7rem]">{title}</h3>
           </div>
           {desc ? (
-          <p className="font-Dirooz sm:text-3xl text-center sm:text-right opacity-70">
+          <p className="font-Dirooz tracking-wide sm:text-3xl text-center sm:text-right opacity-70">
             {desc}
           </p>
           ) : null}

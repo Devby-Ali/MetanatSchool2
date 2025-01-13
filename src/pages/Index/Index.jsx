@@ -1,10 +1,10 @@
 // import React, { useState } from "react";
 import React, { useState } from "react";
 import Header from "../../Components/Header/Header";
-import LastClasses from "../../Components/LastCourses/LastClasses";
+import LastClasses from "../../Components/LastClasses/LastClasses";
 import AboutUs from "../../Components/AboutUs/AboutUs";
-import PopularCourses from "../../Components/PopularCourses/PopularCourses";
-import PresellCourses from "../../Components/PresellCourses/PresellCourses";
+import Teachers from "../../Components/Teachers/Teachers";
+import Events from "../../Components/Events/Events";
 import LastArticles from "../../Components/LastArticles/LastArticles";
 import Footer from "../../Components/Footer/Footer";
 import DescriptionCards from "../../Components/DescriptionCard/DescriptionCards";
@@ -21,8 +21,8 @@ export default function Index() {
       <DescriptionCards />
       <LastClasses />
       <AboutUs />
-      <PopularCourses />
-      <PresellCourses />
+      <Teachers />
+      <Events />
       <LastArticles />
       <Footer />
     </>

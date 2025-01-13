@@ -6,14 +6,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules";
 
-export default function PresellCourses() {
-  const [PresellCourses, setpresellCourses] = useState([]);
+export default function Teachers() {
+  const [popularCourses, setPopularCourses] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:4000/v1/courses/presell`)
+    fetch(`http://localhost:4000/v1/courses/popular`)
       .then((res) => res.json())
-      .then((allpresell) => {
-        setpresellCourses(allpresell);
+      .then((allPopular) => {
+        setPopularCourses(allPopular);
       });
   }, []);
 
@@ -21,10 +21,10 @@ export default function PresellCourses() {
     <div className="mb-48">
       <div className="container">
         <SectionHeader
-          title="دوره های در حال پیش فروش"
-          desc="متن تستی برای توضیحات دوره های پیش فروش"
+          title="استادان محترم"
+          desc="مدرسه، خانه ای با کیفیت در آموزش همراه با معلمان مجرب"
         />
-        <div className="container">
+         <div className="container">
           <Swiper
             slidesPerView={1}
             spaceBetween={30}
@@ -48,7 +48,7 @@ export default function PresellCourses() {
             modules={[Autoplay]}
             className="mySwiper"
           >
-            {PresellCourses.map((course) => (
+            {popularCourses.map((course) => (
               <>
                 <SwiperSlide>
                   <CourseBox {...course} isSlider={true} />

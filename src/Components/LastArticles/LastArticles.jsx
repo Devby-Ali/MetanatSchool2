@@ -18,7 +18,7 @@ export default function LastArticles() {
     <section className="mb-48">
       <div className="container">
         <SectionHeader
-          title="وبلاگ آموزشی SKY-Tech"
+          title="وبلاگ آموزشی متانت"
           desc="پیش به سوی ارتقای دانش"
           btnTitle="مشاهده همه مقالات"
           btnHref="articles/1"

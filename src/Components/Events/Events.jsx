@@ -6,14 +6,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules";
 
-export default function PopularCourses() {
-  const [popularCourses, setPopularCourses] = useState([]);
+export default function Events() {
+  const [PresellCourses, setpresellCourses] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:4000/v1/courses/popular`)
+    fetch(`http://localhost:4000/v1/courses/presell`)
       .then((res) => res.json())
-      .then((allPopular) => {
-        setPopularCourses(allPopular);
+      .then((allpresell) => {
+        setpresellCourses(allpresell);
       });
   }, []);
 
@@ -21,10 +21,10 @@ export default function PopularCourses() {
     <div className="mb-48">
       <div className="container">
         <SectionHeader
-          title="محبوب ترین دوره ها"
-          desc="دوره های محبوب بر اساس امتیاز دانشجوها"
+          title="رویداد ها"
+          desc="اخبار و اطلاعیه های دبستان متانت"
         />
-         <div className="container">
+        <div className="container">
           <Swiper
             slidesPerView={1}
             spaceBetween={30}
@@ -48,7 +48,7 @@ export default function PopularCourses() {
             modules={[Autoplay]}
             className="mySwiper"
           >
-            {popularCourses.map((course) => (
+            {PresellCourses.map((course) => (
               <>
                 <SwiperSlide>
                   <CourseBox {...course} isSlider={true} />

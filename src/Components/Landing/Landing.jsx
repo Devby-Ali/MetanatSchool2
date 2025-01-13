@@ -83,7 +83,7 @@ export default function Landing({ info }) {
             </Button>
           </form>
         </div>
-        <h2 className="text-3xl/relaxed sm:text-4xl/relaxed lg:text-5xl/relaxed tracking-wider font-MikhakWoff2one w-4/5 text-center text-white font-bold">
+        <h2 className="text-3xl/relaxed sm:text-4xl/relaxed lg:text-5xl/relaxed font-EstedadMedium w-4/5 text-center text-white font-bold">
           <Typewriter
             onInit={(typeWriter) => {
               typeWriter
