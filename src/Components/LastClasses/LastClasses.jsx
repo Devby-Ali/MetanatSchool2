@@ -19,9 +19,9 @@ export default function LastClasses() {
       <div className="mb-48">
         <div className="container">
           <SectionHeader
-            title="جدیدترین دوره ها"
+            title="جدیدترین کلاس ها"
             desc="سکوی پرتاپ شما به سمت موفقیت"
-            btnTitle="تمامی دوره ها"
+            btnTitle="تمامی کلاس ها"
             btnHref="courses/1"
           />
 

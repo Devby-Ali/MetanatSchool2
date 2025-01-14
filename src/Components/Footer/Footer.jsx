@@ -1,7 +1,7 @@
 import React from "react";
 import FooterItem from "../FooterItem/FooterItem";
 import { Link } from "react-router-dom";
-import { HiOutlineDevicePhoneMobile, HiOutlineEnvelope } from "react-icons/hi2";
+import { HiOutlineDevicePhoneMobile, HiOutlineEnvelope, HiOutlineMapPin } from "react-icons/hi2";
 import { HiOutlinePhone } from "react-icons/hi2";
 import { LiaTelegram } from "react-icons/lia";
 import { SlSocialInstagram } from "react-icons/sl";
@@ -120,6 +120,13 @@ export default function Footer() {
                 <FaInstagram />
               </div>
             </a>
+            <span className="flex items-center gap-x-1 text-2xl sm:text-[1.7rem]">
+            <div className="text-3xl sm:text-4xl">
+              <HiOutlineMapPin />
+            </div>
+            مرکزی - اراک - خیابان شهید بهشتی - کوچه عضد ۱
+          </span>
+
             <div className="flex items-center flex-wrap gap-y-6 gap-x-4 lg:gap-x-8">
               <span>
                 اشتراک در خبرنامه : جهت اطلاع از آخرین اخبار و تخفیف های سایت
@@ -151,6 +158,7 @@ export default function Footer() {
               </form>
             </div>
           </div>
+
         </div>
         <div className="flex items-start justify-between flex-wrap gap-5 sm:mb-14 text-3xl/10">
           <div>

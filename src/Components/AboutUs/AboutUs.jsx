@@ -13,7 +13,7 @@ export default function AboutUs() {
       <div className="container">
         <div className="flex flex-col lg:flex-row text-darkColor dark:text-white mb-12 lg:mb-28 gap-x-6">
           <div className="relative flex-center sm:my-10 lg:w-full">
-            <div className="absolute w-[120%] 2xl:w-[160%] h-[120%] lg:h-[100%] xl:h-[120%] bg-gradient-to-l from-darkColor from-30% to-light-blue-800 z-0 left-16 rounded-tl-[70px]"></div>
+            <div className="absolute w-[120%] 2xl:w-[160%] h-[120%] lg:h-[100%] xl:h-[120%] bg-gradient-to-l from-transparent from-30% to-light-blue-800 z-0 left-16 rounded-tl-[70px]"></div>
             <img
               src="images/aboutUs.jpg"
               alt="aboutImg"
