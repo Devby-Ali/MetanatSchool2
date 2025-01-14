@@ -19,11 +19,13 @@ import AdminCategory from "./pages/AdminPanel/Category/Category";
 import AdminContact from "./pages/AdminPanel/Contact/Contact";
 import Sessions from "./pages/AdminPanel/Sessions/Sessions";
 import Comments from "./pages/AdminPanel/Comments/Comments";
+import AboutUs from "./pages/AboutUs/AboutUs";
 
 const routes = [
   { path: "/", element: <Index /> },
   { path: "/course-info/:courseName", element: <CourseInfo /> },
   { path: "/category-info/:categoryName/:page", element: <Category /> },
+  { path: "/category-info/aboutUs/:page", element: <AboutUs /> },
   { path: "/article-info/:articleName", element: <ArticleInfo /> },
   { path: "/courses/:page", element: <Courses /> },
   { path: "/articles/:page", element: <Articles /> },

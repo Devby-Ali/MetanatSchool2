@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Header from "../../Components/Header/Header";
 import LastClasses from "../../Components/LastClasses/LastClasses";
-import AboutUs from "../../Components/AboutUs/AboutUs";
+import AboutUs from "../../Components/AboutUs/AboutUsComponent";
 import Teachers from "../../Components/Teachers/Teachers";
 import Events from "../../Components/Events/Events";
 import LastArticles from "../../Components/LastArticles/LastArticles";

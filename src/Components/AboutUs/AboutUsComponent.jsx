@@ -5,9 +5,14 @@ import { BiSupport } from "react-icons/bi";
 import { MdOutlineContentCopy } from "react-icons/md";
 import { GiCutDiamond } from "react-icons/gi";
 import { IoCodeWorking } from "react-icons/io5";
-import { HiBookOpen, HiMiniHeart, HiOutlineCheckCircle, HiPresentationChartLine } from "react-icons/hi2";
+import {
+  HiBookOpen,
+  HiMiniHeart,
+  HiOutlineCheckCircle,
+  HiPresentationChartLine,
+} from "react-icons/hi2";
 
-export default function AboutUs() {
+export default function AboutUsComponent() {
   return (
     <div className="mb-48">
       <div className="container">
@@ -15,7 +20,7 @@ export default function AboutUs() {
           <div className="relative flex-center sm:my-10 lg:w-full">
             <div className="absolute w-[120%] 2xl:w-[160%] h-[120%] lg:h-[100%] xl:h-[120%] bg-gradient-to-l from-transparent from-30% to-light-blue-800 z-0 left-16 rounded-tl-[70px]"></div>
             <img
-              src="images/aboutUs.jpg"
+              src="/images/aboutUs.jpg"
               alt="aboutImg"
               className="rounded-tl-[70px] z-10"
             />
